@@ -35,7 +35,7 @@ It is important to keep in mind that this dataset is very unbalanced. There are 
 3. `ClusterCentroids`
 - Undersampling decreases the size of the majority class (low risk applications) to match the minority class. There is an inherent risk of losing important data from the majority class when using this algorithm. 
 - Cluster centroids undersampling identifies clusters of the majority class, then generates centroids, synthetic data points, that represent the clusters. Next, this algorithm uses the centroids to then undersample the majority class to meet the size of the minority class.
-![CC_AC](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/CC_AC.png)
+![CC_AS](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/CC_AS.png)
 ![CC_CM](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/CC_CM.png)
 ![CC_CR](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/CC_CR.png)
 
@@ -47,7 +47,7 @@ It uses a two-step process:
   2. Clean the resulting data with an undersampling strategy. If the two nearest neighbors of a data point belong to two different classes, that data point is dropped. 
 -This method removes some outliers from the sampled dataset.
 
-![S_AC](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/S_AC.png)
+![S_AS](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/S_AS.png)
 ![S_CM](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/S_CM.png)
 ![S_CR](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/S_CR.png)
 
