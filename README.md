@@ -76,9 +76,9 @@ This screenshot shows the top 15 features by importance according to the Balance
 
 The Easy Ensemble AdaBoost model yielded the highest accuracy score (0.93) out of the six algorithms used in this analysis. The nature of the algorithm makes sense that it would be more accurate than using the other methods. 
 
-Precision was also very low when using the other five models compared to the precision of the Easy Ensemble algorithm, which had 0.09 precision in correctly predicting high risk applications, showing that it is relatively more reliable than the other algorithms. The precision for the other models were 0.03 and 0.01. 
+Precision was also very low when using the other five models compared to the precision of the Easy Ensemble AdaBoost algorithm, which had 0.09 precision in correctly predicting high risk applications, showing that it is relatively more reliable than the other algorithms. The precision for the other models were 0.03 and 0.01. 
 
-When comparing the recall (sensitivity) amongst the different methods, the Easy Ensemble classifier yielded the best result with 0.92. Recall is the ability of the classifier to find all the high risk applications. Alternatively, a low recall indicates a larger number of false negatives.     
+When comparing the recall (sensitivity) amongst the different methods, the Easy Ensemble AdaBoost classifier yielded the best result with 0.92. Recall is the ability of the classifier to find all the high risk applications. Alternatively, a low recall indicates a larger number of false negatives.     
 
 F1 scores: The F1 score is a weighted average of the true positive rate (recall) and precision, where the best score is 1.0 and the worst is 0.0. Again the Easy Ensemble model had the highest F1 in the group with a score of 0.16, which overall is rather low. In comparison, the Balanced Random Forest method had the second best F1 score of 0.06, which is still much lower than Easy Ensemble's F1 score. 
 
