@@ -71,6 +71,9 @@ This screenshot shows the top 15 features by importance according to the Balance
 ![EEC_CM](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/EEC_Confusion_Matrix.png)
 ![EEC_CR](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/EEC_CR.png)
 
+This table summarizes the results:
+
+![results_table](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/results_table.png)
 
 ## Summary
 
