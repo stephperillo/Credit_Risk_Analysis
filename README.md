@@ -25,11 +25,38 @@ It is important to keep in mind that this dataset is very unbalanced. There are 
 ![NRO_CM](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/NRO_Confusion_Matrix.png)
 ![NRO_CR](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/NRO_CR.png)
 
+- Balanced Accuracy Score: 0.647
+
+    Accuracy is the fraction of predictions this model got correct. 
+    
+    The formula for Accuracy = (TP + TN) / (TP + TN + FP + FN)
+          where TP is True Positives, TN is True Negatives, FP is False Positives, and FN is False Negatives
+          
+    This model got 65 correct predictions out of 100.
+    
+- Precision: 0.01 for predicting high risk loan applications
+    
+    Precision answers what proportion of positive identifications was actually correct?
+        
+     The formula for Precision = TP/(TP + FP) where TP is True Positives and FP is False Positives.
+     
+     When this model predicts a high risk application, it is correct only one out of 100 times.
+     
+- Recall (Sensitivity): 0.69 means this model was able to find 69% of all actual high risk applications.
+    
+    Recall answers what proportion of actual positives was identified correctly?
+            
+     Recall = TP/(TP + FN)
+ 
 2. `SMOTE`
 - SMOTE is another oversampling method, however, it selects close neighbors to the minority class and synthesizes new instances.
+
 ![SMOTE_AS](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/SMOTE_AS.png)
 ![SMOTE_CM](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/SMOTE_CM.png)
 ![SMOTE_CR](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/S_CR.png)
+- Balanced Accuracy Score: 0.653 
+- Precision: 0.01
+- Recall: 0.62
 
 #### Undersampling
 3. `ClusterCentroids`
@@ -38,6 +65,9 @@ It is important to keep in mind that this dataset is very unbalanced. There are 
 ![CC_AS](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/CC_AS.png)
 ![CC_CM](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/CC_CM.png)
 ![CC_CR](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/CC_CR.png)
+- Balanced Accuracy Score: 0.544
+- Precision: 0.01
+- Recall: 0.69 
 
 #### Combination Sampling
 4. `SMOTEENN`
@@ -51,6 +81,10 @@ It uses a two-step process:
 ![S_CM](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/S_CM.png)
 ![S_CR](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/S_CR.png)
 
+- Balanced Accuracy Score: 0.668
+- Precision: 0.01
+- Recall: 0.78
+
 #### Using machine learning models that reduce bias
 5. `BalancedRandomForestClassifier` 
 > A balanced random forest randomly under-samples each bootstrap sample to balance it.[^1]
@@ -59,6 +93,10 @@ It uses a two-step process:
 ![BRF_AC](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/BRF_Accuracy_Score.png)
 ![BRF_CM](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/BRF_Confusion_Matrix.png)
 ![BRF_CR](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/BRF_CR.png)
+
+- Balanced Accuracy Score: 0.789
+- Precision: 0.03
+- Recall: 0.70
 
 This screenshot shows the top 15 features by importance according to the BalancedRandomForest model:
 ![Feature_Importance](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/Feature_Importance.png)
@@ -71,6 +109,10 @@ This screenshot shows the top 15 features by importance according to the Balance
 ![EEC_CM](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/EEC_Confusion_Matrix.png)
 ![EEC_CR](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/EEC_CR.png)
 
+- Balanced Accuracy Score: 0.932
+- Precision: 0.09 
+- Recall: 0.92 
+
 This table summarizes the results:
 
 ![results_table](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/results_table.png)
@@ -81,12 +123,7 @@ This table summarizes the results:
 
 - Precision was also very low when using the other five models compared to the precision of the Easy Ensemble AdaBoost algorithm, which had 0.09 precision in correctly predicting high risk applications, showing that it is relatively more reliable than the other algorithms. The precision for the other models were 0.03 and 0.01. 
 
-    The formula for Precision = TP/(TP + FP) where TP is True Positives and FP is False Positives.
-
 - When comparing the recall (sensitivity) amongst the different methods, the Easy Ensemble AdaBoost classifier yielded the best result with 0.92. Recall is the ability of the classifier to find all the high risk applications. Alternatively, a low recall indicates a larger number of false negatives.     
-
-    Sensitivity = TP/(TP + FN)
-      where FN is False Negatives
 
 - F1 scores: The F1 score, also known as harmonic mean, is a weighted average of the true positive rate (recall) and precision, where the best score is 1.0 and the worst is 0.0. 
     The formula for f1 score is: 2(Precision * Sensitivity)/(Precision + Sensitivity).
