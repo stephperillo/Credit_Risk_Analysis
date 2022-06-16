@@ -27,7 +27,7 @@ It is important to keep in mind that this dataset is very unbalanced. There are 
 
 2. `SMOTE`
 - SMOTE is another oversampling method, however, it selects close neighbors to the minority class and synthesizes new instances.
-![SMOTE_AC](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/S_AC.png)
+![SMOTE_AS](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/SMOTE_AS.png)
 ![SMOTE_CM](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/SMOTE_CM.png)
 ![SMOTE_CR](https://github.com/stephperillo/Credit_Risk_Analysis/blob/main/Resources/S_CR.png)
 
