@@ -81,15 +81,15 @@ This table summarizes the results:
 
 - Precision was also very low when using the other five models compared to the precision of the Easy Ensemble AdaBoost algorithm, which had 0.09 precision in correctly predicting high risk applications, showing that it is relatively more reliable than the other algorithms. The precision for the other models were 0.03 and 0.01. 
 
-The formula for Precision = TP/(TP + FP) where TP is True Positives and FP is False Positives.
+    The formula for Precision = TP/(TP + FP) where TP is True Positives and FP is False Positives.
 
 - When comparing the recall (sensitivity) amongst the different methods, the Easy Ensemble AdaBoost classifier yielded the best result with 0.92. Recall is the ability of the classifier to find all the high risk applications. Alternatively, a low recall indicates a larger number of false negatives.     
 
-Sensitivity = TP/(TP + FN)
-where FN is False Negatives
+    Sensitivity = TP/(TP + FN)
+      where FN is False Negatives
 
 - F1 scores: The F1 score, also known as harmonic mean, is a weighted average of the true positive rate (recall) and precision, where the best score is 1.0 and the worst is 0.0. 
-The formula for f1 score is: 2(Precision * Sensitivity)/(Precision + Sensitivity).
+    The formula for f1 score is: 2(Precision * Sensitivity)/(Precision + Sensitivity).
 
 Again the Easy Ensemble model had the highest F1 in the group with a score of 0.16, which overall is rather low. In comparison, the Balanced Random Forest method had the second best F1 score of 0.06, which is still much lower than Easy Ensemble's F1 score. 
 
